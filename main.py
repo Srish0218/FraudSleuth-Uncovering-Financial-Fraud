@@ -38,7 +38,7 @@ if st.button("Predict Fraud"):
     prediction = model.predict(input_data)
     # Predict using the model
     result = prediction[0]
-    if result == "Not Fraud":
+    if result == "No Fraud":
         st.success(f"Prediction: {result}")
     else:
         st.warning(f"Prediction: {result}")
